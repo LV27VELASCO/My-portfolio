@@ -1,0 +1,326 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family:sans-serif;
+}
+
+::before,::after{
+    box-sizing: inherit;
+}
+
+body{ margin: 0;
+padding: 0;}
+
+h1,h2,h3,h4{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.H-hero{
+    background-color: #320b5a;
+    width: 100vw;
+    height: 4.1em;
+    margin: 0;
+    position:sticky;
+    top: 0;
+}
+
+.H-hero .container-hd{
+    height: inherit;
+    display: flex;
+    gap: 0.6rem;
+    justify-content: space-evenly;
+}
+
+.H-hero .container-hd .logo{
+    height: inherit;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.container-hd .logo i{
+    color: #ffff;
+    font-size: 1.2rem;
+}
+
+.container-hd h2{
+    margin-top:0.06rem;
+    color:whitesmoke;
+    font-size:1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*--ARRIBA SE ENCUENTRAN LOS ESTILOS DEL LOGO*/
+
+.buscar{
+    display: flex;
+    align-items: center;
+}
+
+.buscar input{
+    padding:4px 2px 4px 20px;
+    width: 50px;
+    border: 2px solid rgb(68, 7, 112);
+    border-radius:15px;
+    background-color: #852be098;
+    background-image:url("Icon/search.png");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    outline: none;
+    transition: all .7s;
+    color: rgba(255, 255, 255, 0.817);
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.817);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.buscar input:hover{
+    width: 100px;
+    border: 1px solid rgb(105, 35, 105);
+    box-shadow: 0px 0px 1px 1px rgb(129, 16, 129);
+}
+
+/*--ARRIBA SE ENCUENTRAN LOS ESTILOS DEL INPUT*/
+
+
+
+.H-hero .container-hd .iteracion{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.iteracion{
+    display: flex;
+    gap:2em;
+}
+
+.iteracion nav{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.iteracion i{
+    color:rgb(199, 179, 206);
+    font-size: 1.5rem;
+}
+
+nav a>i:hover{
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+
+.iteracion .p-img{
+    width: 2rem;
+    height: 2rem;
+    padding:0px 0px 4px 0px;
+}
+
+.iteracion .p-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius:50%;
+    box-shadow:0px 0px 2px 1px #ffff;
+}
+/*--ARRIBA SE ENCUENTRAN LOS ESTILOS DE LAS RUTAS  Y PERFIL*/
+
+/*ARRIBA EMPIEZAN TODOS LOS ELEMENTOS DEL ENCABEZADO*/
+/*ARRIBA EMPIEZAN TODOS LOS ELEMENTOS DEL ENCABEZADO*/
+
+.hero{
+    width: 100vw;
+}
+
+.hero .container-bd{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8em;
+}
+
+.posts{
+    width: 45%;
+    box-shadow: 0px 0px 2px 1px #c285c9;
+    background: rgb(241, 233, 233);
+}
+
+.hd-post{
+    height: 60px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    border-bottom: 1px solid beige;
+}
+
+.hd-post i{
+    font-size: 1.5rem;
+    color:rgb(199, 179, 206);
+    cursor: pointer;
+}
+
+.hd-post .contain-i div{
+    width: 40px;
+    height: 40px;
+}
+
+.hd-post .contain-i div img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hd-post .contain-i h2{
+    font-family:'Courier New', Courier, monospace;
+    font-size:1rem;
+    font-weight: 400;
+}
+
+.contain-i{
+cursor: pointer;
+}
+
+.hd-post div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.hd-post .contain-i{
+    display: flex;
+    gap: 10px;
+    align-items:center;
+}
+
+
+.pst-body{
+    width:100%;
+    height:22rem;
+}
+
+.pst-body img{
+    width:inherit;
+    height:inherit;
+    object-fit: cover;
+    object-position:center;
+}
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.625em;
+}
+
+.container-text .bd-text>*{
+    display: inline;
+}
+
+.container-text h2{
+    padding-left: 0.06em;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+}
+
+.container-text p{
+    font-family:'Lucida Sans Unicode', Verdana;
+    font-size: 0.9rem;
+}
+
+.bd-text{
+    gap:0.36em;
+}
+
+.bd-text h2{
+    padding-right: 0.5em;
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: inline;
+}
+
+.bd-text p{
+    font-size: 0.9rem;
+    font-family:sans-serif;
+    display: inline;
+}
+
+.pst-foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+.pst-foot i{
+    
+    cursor: pointer;
+}
+
+.i-foot{
+    display: flex;
+    align-items: center;
+    gap:0.9em;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+
+
+
+.container-text span{
+    font-size: 13px;
+    color: rgb(165, 156, 156);
+}
+
+.F-hero{
+    height: 30px;
+    background: #320b5aea;
+    display: flex;
+    justify-content: center;
+}
+
+.F-hero div{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+@media screen and (max-width:420px){
+    
+    .posts{
+        width: 85%;
+    }
+
+    .iteracion{
+        display: flex;
+        gap:1.5em;
+    }
+
+    .buscar input{
+        width: 45px;
+    }
+
+    .buscar input:hover{
+        width:65px;
+    }
+}
