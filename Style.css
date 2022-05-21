@@ -1,11 +1,18 @@
 *{
-padding: 0;
-margin: 0;
-font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+font-family: 'Poppins', sans-serif;
 color: white;
 text-decoration: none;
 box-sizing: border-box;
 scroll-behavior: smooth;
+}
+
+*,::before,::after{
+    box-sizing: inherit;
 }
 
 
@@ -18,56 +25,86 @@ scroll-behavior: smooth;
     --size-titles:1.6rem;
 }
 
-.header-hero{
+.navbar{
     width: 100%;
     height: 3.75em;
     background-color: var(--color-baground);
-    display: flex;
-    justify-content: end;
     position: sticky;
     top: 0;
 }
 
-.header-container{
+.nav-container{
+    position: relative;
     display: flex;
-    padding: 0 20px;
+    justify-content: end;
+    flex-direction: row-reverse;
     align-items: center;
     height: inherit;
-    width: 80%;
-    
 }
 
-.rutas{
-    display: flex;
+.nav-btn{
+    background-color:transparent;
+    border: none;
+    padding:20px;
+}
+
+.nav-btn>i{
+    font-size: 26px;
+    color: whitesmoke;
+}
+
+    
+.nav-menu{
+    height: 0;
+    overflow: hidden;
+    }
+    
+.nav-menu.active{
     width: 100%;
-    justify-content: space-around;
-    font-size: var(--text-nav);
+    height: auto;
+    position: absolute;
+    top:3.75rem;
+    background-color:#020403;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 35% 35%;
+    box-shadow:0px 6px 6px 0px whitesmoke;
+    transition: all 3s ease ease-in-out;}
     
-}
-
-.rutas>a{
-    font-family: monospace;
-}
-
-.rutas>a>h2{
+    
+ .nav-menu.active a{
     color:var(--color-subtext);
     font-size: var(--text-nav);
-}
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0px;
+    animation:fadeIn;
+    animation-duration: 2s;}
 
-.rutas>a>h2:hover{
+
+.nav-menu>a:hover{
     color:#ffffff;
     font-size:var(--text-nav-hover);
     transition: all .3s;
     
 }
 
-.rutas>a>h2{
-    font-family: monospace;
-}
+ /* Header media*/
 
-@media screen and (max-width:390px) {
-    
-}
+ @media screen and (min-width:660px) {
+     .nav-btn{
+         display: none;
+     }
+
+     .nav-menu{
+         height: inherit;
+         width: 95%;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+     }
+ }
 
 .main-hero{
     width: 100%;
@@ -181,14 +218,14 @@ scroll-behavior: smooth;
 
 .container-habilidades{
     height:inherit;
-    width: inherit;
+    width: 100%;
     background:linear-gradient(rgb(0,0,0,0.5),
     rgb(0,0,0,0.8)
     ),transparent;
 } 
 
 .grid{
-    width: inherit;
+    
     height: inherit;
     padding: 0.5em;
     display: flex;
@@ -241,7 +278,6 @@ scroll-behavior: smooth;
 
 
 .Experiencia{
-    width: 100%;
     height: 70vh;
     padding: 0.5em;
     display: flex;
@@ -260,6 +296,7 @@ scroll-behavior: smooth;
     justify-content: center;
     align-items: center;
     grid-template-columns:25% 25%;
+    gap: 20px 0px;
 }
 
 
@@ -267,12 +304,18 @@ scroll-behavior: smooth;
     width: 100%;
     height: 100%;
     border-bottom: 1px solid gray;
+    display: flex;
     text-align: center;
-    padding: 10px;
+    flex-direction: column;
 }
-.container-xp>span>*{
+.container-xp>span{
     font-size: 0.8rem;
     color: var(--color-subtext);
+    font-weight: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .container-xp>div>h3{
@@ -287,8 +330,6 @@ scroll-behavior: smooth;
 
 
 .portafolio{
-    height:90vh;
-    width: 100%;
     padding: 0.5em;
     display: flex;
     justify-content: center;
@@ -297,6 +338,7 @@ scroll-behavior: smooth;
     background:linear-gradient(rgb(0,0,0,0.5),
     rgb(0,0,0,0.8)
     ),transparent;
+    gap: 2rem;
 }
 
 .portafolio>h2{
@@ -347,18 +389,31 @@ scroll-behavior: smooth;
 }
 
 
+@media screen and (max-width:640px) {
+    .container-pf{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-pf>.card{
+        width: 70%;
+    }
+    
+}
+
 .contacto{
-    width: 100%;
     height: 80vh;
     padding: 0.5em;
     background:linear-gradient(rgb(0,0,0,0.5),
     rgb(0,0,0,0.8)
     ),transparent;
+    text-align: center;
 }
 
 .contacto>h2{
     font-size: var(--size-titles);
-    margin: 20px 45% 0px 45%;
+    padding-top: 30px;
 }
 
 .contacto>.container-contacto{

@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LV|Portfolio</title>
     <link rel="stylesheet" href="Style.css">
+    <!---Estilo de letra poppis-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!---Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!---Boxicon-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!---icono-->
     <link rel="icon" href="Logos-Imágenes/logo.png">
 </head>
 <body>
-    <header class="header-hero">
-        <div class="header-container">
-            <nav class="rutas">
-                <a href="#home"><h2>Home</h2></a>
-                <a href="#acerca_de_mi"><h2>Acerca de mí</h2></a>
-                <a href="#habilidades"><h2>Mis habilidades</h2></a>
-                <a href="#experiencia"><h2>Experiencia</h2></a>
-                <a href="#portafolio"><h2>Portafolio</h2></a>
-                <a href="#contacto"><h2>Contacto</h2></a>
+    <header class="navbar">
+        <div class="nav-container">
+            <button id="nav-btn" class="nav-btn">
+                <i class='bx bx-menu'></i>
+            </button>
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#acerca_de_mi" class="">Acerca de mí</a>
+                <a href="#habilidades">Mis habilidades</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#portafolio">Portafolio</a>
+                <a href="#contacto">Contacto</a>
             </nav>
         </div>
     </header>
@@ -114,7 +126,9 @@
                             <div>
                                 <img src="Logos-Imágenes/Instagram.jpg">
                             </div>
-                            <a href="Proyectos/Veloc Inst/Index.html"><h2>Insta Clone</h2></a>
+                            <a href="Proyectos/Veloc Inst/Index.html">
+                                <h2>Insta Clone</h2>
+                            </a>
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit illo adipisci magni, impedit assumenda hic atque quo non.
                             </p>
@@ -132,7 +146,7 @@
                             <div>
                                 <img src="Logos-Imágenes/In progress.jpg">
                             </div>
-                            <h2>Api Pokemons</h2>
+                            <h2>Pokemon</h2>
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit illo adipisci magni, impedit assumenda hic atque quo non.
                             </p>
@@ -163,6 +177,7 @@
                         <h2>Luis Velasco in 2022</h2>
                     </div>
                 </footer>
+                <script src="Javascrip.js"></script>
             </div>
         </main>
 </body>
