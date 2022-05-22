@@ -483,3 +483,9 @@ scroll-behavior: smooth;
     font-size:0.9rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+@media  screen and (max-width:675px) {
+    .grid-colum>h4{
+        display: none;
+    }
+}
